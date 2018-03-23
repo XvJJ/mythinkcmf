@@ -6,8 +6,6 @@ namespace app\domain\controller;
 
 use cmf\controller\AdminBaseController;
 
-
-
 /**
  * Class AdminDomainController
  * @package app\domain\controller
@@ -22,4 +20,16 @@ class AdminDomainController extends AdminBaseController
     {
 
     }
+
+    public function domainadd()
+    {
+
+    }
+
+    public function domainedit()
+    {}
+
+    public function domaindel()
+    {}
+
 }

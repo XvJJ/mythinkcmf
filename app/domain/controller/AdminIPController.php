@@ -6,7 +6,6 @@ namespace app\domain\controller;
 
 use cmf\controller\AdminBaseController;
 
-
 /**
  * Class AdminIPController
  * @package app\domain\controller
@@ -21,4 +20,20 @@ class AdminIPController extends AdminBaseController
     {
 
     }
+
+    public function ipadd()
+    {
+
+    }
+
+    public function ipedit()
+    {
+
+    }
+
+    public function ipdel()
+    {
+
+    }
+
 }

@@ -21,8 +21,8 @@ use cmf\controller\AdminBaseController;
  */
 class AdminIndexController extends AdminBaseController
 {
-	public function index(){
-		
-	}
+    public function index()
+    {
 
+    }
 }
