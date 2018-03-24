@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 21/03/2018 15:29:55
+ Date: 23/03/2018 17:04:32
 */
 
 SET NAMES utf8mb4;
@@ -38,7 +38,7 @@ CREATE TABLE `cmf_admin_menu`  (
   INDEX `status`(`status`) USING BTREE,
   INDEX `parent_id`(`parent_id`) USING BTREE,
   INDEX `controller`(`controller`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 165 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '后台菜单表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 171 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '后台菜单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cmf_admin_menu
@@ -204,9 +204,15 @@ INSERT INTO `cmf_admin_menu` VALUES (158, 6, 1, 1, 10000, 'user', 'AdminUserActi
 INSERT INTO `cmf_admin_menu` VALUES (159, 158, 1, 0, 10000, 'user', 'AdminUserAction', 'edit', '', '编辑用户操作', '', '编辑用户操作');
 INSERT INTO `cmf_admin_menu` VALUES (160, 158, 2, 0, 10000, 'user', 'AdminUserAction', 'editPost', '', '编辑用户操作提交', '', '编辑用户操作提交');
 INSERT INTO `cmf_admin_menu` VALUES (161, 158, 1, 0, 10000, 'user', 'AdminUserAction', 'sync', '', '同步用户操作', '', '同步用户操作');
-INSERT INTO `cmf_admin_menu` VALUES (162, 0, 1, 1, 40, 'Domain', 'AdminIndex', 'default', '', '域名管理', 'paper-plane', '');
-INSERT INTO `cmf_admin_menu` VALUES (163, 162, 1, 1, 10000, 'Domain', 'AdminIP', 'index', '', 'IP管理', 'location-arrow', '');
-INSERT INTO `cmf_admin_menu` VALUES (164, 162, 1, 1, 10000, 'Domain', 'AdminDomain', 'index', '', '域名查询', 'search-plus', '');
+INSERT INTO `cmf_admin_menu` VALUES (162, 0, 1, 1, 40, 'domain', 'AdminIndex', 'default', '', '域名管理', 'paper-plane', '');
+INSERT INTO `cmf_admin_menu` VALUES (163, 162, 1, 1, 10000, 'domain', 'AdminIP', 'index', '', 'IP管理', 'location-arrow', '');
+INSERT INTO `cmf_admin_menu` VALUES (164, 162, 1, 1, 10000, 'domain', 'AdminDomain', 'index', '', '域名列表', 'search-plus', '');
+INSERT INTO `cmf_admin_menu` VALUES (165, 163, 1, 0, 10000, 'domain', 'AdminIP', 'ipadd', '', 'IP添加', '', '');
+INSERT INTO `cmf_admin_menu` VALUES (166, 163, 1, 0, 10000, 'domain', 'AdminIP', 'ipedit', '', 'IP编辑', '', '');
+INSERT INTO `cmf_admin_menu` VALUES (167, 163, 1, 0, 10000, 'domain', 'AdminIP', 'ipdel', '', 'IP删除', '', '');
+INSERT INTO `cmf_admin_menu` VALUES (168, 164, 1, 0, 10000, 'domain', 'AdminDomain', 'domainadd', '', '域名添加', '', '');
+INSERT INTO `cmf_admin_menu` VALUES (169, 164, 1, 0, 10000, 'domain', 'AdminDomain', 'domainedit', '', '域名编辑', '', '');
+INSERT INTO `cmf_admin_menu` VALUES (170, 164, 1, 0, 10000, 'domain', 'AdminDomain', 'domaindel', '', '域名删除', '', '');
 
 -- ----------------------------
 -- Table structure for cmf_asset
@@ -241,7 +247,14 @@ CREATE TABLE `cmf_auth_access`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `role_id`(`role_id`) USING BTREE,
   INDEX `rule_name`(`rule_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '权限授权表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '权限授权表' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of cmf_auth_access
+-- ----------------------------
+INSERT INTO `cmf_auth_access` VALUES (1, 2, 'domain/adminindex/default', 'admin_url');
+INSERT INTO `cmf_auth_access` VALUES (2, 2, 'domain/adminip/index', 'admin_url');
+INSERT INTO `cmf_auth_access` VALUES (3, 2, 'domain/admindomain/index', 'admin_url');
 
 -- ----------------------------
 -- Table structure for cmf_auth_rule
@@ -259,7 +272,7 @@ CREATE TABLE `cmf_auth_rule`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `name`(`name`) USING BTREE,
   INDEX `module`(`app`, `status`, `type`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 165 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '权限规则表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 171 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '权限规则表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cmf_auth_rule
@@ -427,7 +440,13 @@ INSERT INTO `cmf_auth_rule` VALUES (160, 1, 'user', 'admin_url', 'user/AdminUser
 INSERT INTO `cmf_auth_rule` VALUES (161, 1, 'user', 'admin_url', 'user/AdminUserAction/sync', '', '同步用户操作', '');
 INSERT INTO `cmf_auth_rule` VALUES (162, 1, 'Domain', 'admin_url', 'Domain/AdminIndex/default', '', '域名管理', '');
 INSERT INTO `cmf_auth_rule` VALUES (163, 1, 'Domain', 'admin_url', 'Domain/AdminIP/index', '', 'IP管理', '');
-INSERT INTO `cmf_auth_rule` VALUES (164, 1, 'Domain', 'admin_url', 'Domain/AdminDomain/index', '', '域名查询', '');
+INSERT INTO `cmf_auth_rule` VALUES (164, 1, 'Domain', 'admin_url', 'Domain/AdminDomain/index', '', '域名列表', '');
+INSERT INTO `cmf_auth_rule` VALUES (165, 1, 'domain', 'admin_url', 'domain/AdminIP/ipadd', '', 'IP添加', '');
+INSERT INTO `cmf_auth_rule` VALUES (166, 1, 'domain', 'admin_url', 'domain/AdminIP/ipedit', '', 'IP编辑', '');
+INSERT INTO `cmf_auth_rule` VALUES (167, 1, 'domain', 'admin_url', 'domain/AdminIP/ipdel', '', 'IP删除', '');
+INSERT INTO `cmf_auth_rule` VALUES (168, 1, 'domain', 'admin_url', 'domain/AdminDomain/domainadd', '', '域名添加', '');
+INSERT INTO `cmf_auth_rule` VALUES (169, 1, 'domain', 'admin_url', 'domain/AdminDomain/domainedit', '', '域名编辑', '');
+INSERT INTO `cmf_auth_rule` VALUES (170, 1, 'domain', 'admin_url', 'domain/AdminDomain/domaindel', '', '域名删除', '');
 
 -- ----------------------------
 -- Table structure for cmf_comment
@@ -948,7 +967,7 @@ CREATE TABLE `cmf_user`  (
 -- ----------------------------
 -- Records of cmf_user
 -- ----------------------------
-INSERT INTO `cmf_user` VALUES (1, 1, 0, 0, 1521614300, 0, 0, 0.00, 1521537117, 1, 'admin', '###879c20136c037d32edba42a6c58a8a14', 'admin', 'xujunjie_1020@sina.com', '', '', '', '127.0.0.1', '', '', NULL);
+INSERT INTO `cmf_user` VALUES (1, 1, 0, 0, 1521784279, 0, 0, 0.00, 1521537117, 1, 'admin', '###879c20136c037d32edba42a6c58a8a14', 'admin', 'xujunjie_1020@sina.com', '', '', '', '127.0.0.1', '', '', NULL);
 
 -- ----------------------------
 -- Table structure for cmf_user_action

@@ -5,6 +5,7 @@
 namespace app\domain\controller;
 
 use cmf\controller\AdminBaseController;
+use think\Db;
 
 /**
  * Class AdminIPController
@@ -16,9 +17,27 @@ use cmf\controller\AdminBaseController;
  */
 class AdminIPController extends AdminBaseController
 {
+    public function _initialize()
+    {
+        parent::_initialize();
+    }
+
     public function index()
     {
+        $keyword = $this->request->post('input_ip', '', 'trim');
+        $ipmodel = Db::name('ipadmin');
 
+        if ($keyword) {
+            $ipmodel->where('ip', 'like', '%' . $keyword . '%');
+        }
+
+        $list = $ipmodel->order("id DESC")->paginate(20);
+        // 获取分页显示
+        $page = $list->render();
+        $this->assign('list', $list);
+        $this->assign('page', $page);
+        // 渲染模板输出
+        return $this->fetch();
     }
 
     public function ipadd()

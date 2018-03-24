@@ -16,6 +16,13 @@ use cmf\controller\AdminBaseController;
  */
 class AdminDomainController extends AdminBaseController
 {
+    protected $ip_table;
+
+    public function _initialize()
+    {
+
+    }
+
     public function index()
     {
 
@@ -27,9 +34,13 @@ class AdminDomainController extends AdminBaseController
     }
 
     public function domainedit()
-    {}
+    {
+
+    }
 
     public function domaindel()
-    {}
+    {
+
+    }
 
 }
