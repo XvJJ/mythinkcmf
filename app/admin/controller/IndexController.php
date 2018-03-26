@@ -10,9 +10,8 @@
 // +----------------------------------------------------------------------
 namespace app\admin\controller;
 
-use cmf\controller\AdminBaseController;
-use think\Db;
 use app\admin\model\AdminMenuModel;
+use cmf\controller\AdminBaseController;
 
 class IndexController extends AdminBaseController
 {
@@ -23,7 +22,7 @@ class IndexController extends AdminBaseController
         if (empty($adminSettings['admin_password']) || $this->request->path() == $adminSettings['admin_password']) {
             $adminId = cmf_get_current_admin_id();
             if (empty($adminId)) {
-                session("__LOGIN_BY_CMF_ADMIN_PW__", 1);//设置后台登录加密码
+                session("__LOGIN_BY_CMF_ADMIN_PW__", 1); //设置后台登录加密码
             }
         }
 

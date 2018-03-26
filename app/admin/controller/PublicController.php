@@ -31,7 +31,8 @@ class PublicController extends AdminBaseController
         }
 
         $admin_id = session('ADMIN_ID');
-        if (!empty($admin_id)) {//已经登录
+        if (!empty($admin_id)) {
+//已经登录
             return redirect(url("admin/Index/index"));
         } else {
             $site_admin_url_password = config("cmf_SITE_ADMIN_URL_PASSWORD");
@@ -76,7 +77,8 @@ class PublicController extends AdminBaseController
         if (empty($pass)) {
             $this->error(lang('PASSWORD_REQUIRED'));
         }
-        if (strpos($name, "@") > 0) {//邮箱登陆
+        if (strpos($name, "@") > 0) {
+//邮箱登陆
             $where['user_email'] = $name;
         } else {
             $where['user_login'] = $name;

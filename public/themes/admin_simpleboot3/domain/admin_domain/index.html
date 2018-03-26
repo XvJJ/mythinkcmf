@@ -1,0 +1,56 @@
+<include file='public@header' />
+</head>
+
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active">
+				<a href="{:url('admin_domain/index')}">{:lang('DOMAIN_ADMINDOMAIN_INDEX')}</a>
+			</li>
+			<li>
+				<a href="{:url('admin_domain/domainadd')}">{:lang('DOMAIN_ADMINDOMAIN_DOMAINADD')}</a>
+			</li>
+		</ul>
+		<form class="well form-search" method="post" action="{:url('admin_domain/index')}">
+			<td>
+				<select name="ipid" id="lunchBegins" class="selectpicker form-control" data-live-search="true" data-live-search-style="begins" style="width:200px;display:inline-block;">
+					<option value="">--请选择IP--</option>
+					<volist name="ipres" id="vo">
+						<option value="{$vo.id}" <?php if($ipid==$vo[ 'id']) echo 'selected';?>>{$vo.ip}</option>
+					</volist>
+				</select>
+			</td>
+			<input class="form-control" type="text" name="keyword" style="width: 200px;display:inline-block;" value="{$keyword}" placeholder="请填写域名">&nbsp;&nbsp;&nbsp;
+			<button class="btn btn-primary">搜索</button>&nbsp;&nbsp;&nbsp;
+			<a class="btn btn-danger" href="{:url('admin_domain/index')}">清空</a>
+			<b style="color: red;font-size: 0.7rem;margin-left: 2rem">注：域名请不要带“http://”搜索</b>
+		</form>
+		<table class="table table-hover table-bordered table-list">
+			<thead>
+				<tr>
+					<th>解析IP</th>
+					<th>域名</th>
+					<th width="6%">是否加速</th>
+					<th>备注</th>
+					<th width="7%">{:lang('ACTIONS')}</th>
+				</tr>
+			</thead>
+			<foreach name="res" item="vo">
+				<tr>
+					<td>{$vo.ipid}</td>
+					<td>{$vo.domain}</td>
+					<td>{$vo.isspeed}</td>
+					<td>{$vo.remark}</td>
+					<td>
+						<a href="{:url('admin_domain/domainedit',array('id'=>$vo['id']))}">{:lang('EDIT')}</a>&nbsp;&nbsp;|
+						<a class="js-ajax-delete" href="{:url('admin_domain/domaindel',array('id'=>$vo['id']))}">{:lang('DELETE')}</a>&nbsp;&nbsp;
+					</td>
+				</tr>
+			</foreach>
+		</table>
+		<div class="pagination">{$page}</div>
+	</div>
+<script src="__STATIC__/js/admin.js"></script>
+</body>
+
+</html>

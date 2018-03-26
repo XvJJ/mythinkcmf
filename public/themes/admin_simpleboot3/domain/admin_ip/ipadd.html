@@ -1,0 +1,45 @@
+<include file='public@header' />
+</header>
+
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li>
+				<a href="{:url('admin_ip/index')}">{:lang('DOMAIN_ADMINIP_INDEX')}</a>
+			</li>
+			<li class="active">
+				<a href="{:url('admin_ip/ipadd')}">{:lang('DOMAIN_ADMINIP_IPADD')}</a>
+			</li>
+		</ul>
+		<form action="{:url('admin_ip/ippost')}" method="post" class="form-horizontal js-ajax-form margin-top-20" enctype="multipart/form-data">
+			<div class="row-fluid">
+				<div>
+					<table class="table table-bordered">
+						<tr>
+							<th>IP</th>
+							<td>
+								<input type="text" style="width: 400px;" name="ip" id="ip" value="<php> if(isset($res)):echo $res['ip'];else:echo '';endif;</php>"
+								 required placeholder="请输入IP" />
+								<span class="form-required">*</span>
+							</td>
+						</tr>
+						<tr>
+							<th>备注</th>
+							<td>
+								<input type="text" style="width: 400px;" name="ipremark" id="ipremark" value="<php> if(isset($res)):echo $res['ipremark'];else:echo '';endif;</php>"
+								 placeholder="请填写备注" />
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">{:lang('ADD')}</button>
+				<a class="btn btn-default" href="javascript:history.back(-1);">{:lang('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__STATIC__/js/admin.js"></script>
+</body>
+
+</html>
