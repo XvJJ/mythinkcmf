@@ -10,12 +10,12 @@
 // +----------------------------------------------------------------------
 namespace app\admin\model;
 
-use think\Model;
 use think\Cache;
+use think\Model;
 
 class AdminMenuModel extends Model
 {
-    
+
     /**
      * 按父ID查找菜单子项
      * @param int $parentId 父菜单ID
@@ -26,11 +26,11 @@ class AdminMenuModel extends Model
     {
         //父节点ID
         $parentId = intval($parentId);
-        $result   = $this->where(['parent_id' => $parentId, 'status' => 1])->order("list_order", "ASC")->select();
+        $result = $this->where(['parent_id' => $parentId, 'status' => 1])->order("list_order", "ASC")->select();
 
         if ($withSelf) {
             $result2[] = $this->where(['id' => $parentId])->find();
-            $result    = array_merge($result2, $result);
+            $result = array_merge($result2, $result);
         }
 
         //权限检查
@@ -40,28 +40,21 @@ class AdminMenuModel extends Model
         }
 
         $array = [];
-
         foreach ($result as $v) {
-
             //方法
             $action = $v['action'];
-
             //public开头的通过
             if (preg_match('/^public_/', $action)) {
                 $array[] = $v;
             } else {
-
                 if (preg_match('/^ajax_([a-z]+)_/', $action, $_match)) {
-
                     $action = $_match[1];
                 }
-
                 $ruleName = strtolower($v['app'] . "/" . $v['controller'] . "/" . $action);
 //                print_r($ruleName);
                 if (cmf_auth_check(cmf_get_current_admin_id(), $ruleName)) {
                     $array[] = $v;
                 }
-
             }
         }
 
@@ -75,7 +68,7 @@ class AdminMenuModel extends Model
      */
     public function subMenu($parentId = '', $bigMenu = false)
     {
-        $array   = $this->adminMenu($parentId, 1);
+        $array = $this->adminMenu($parentId, 1);
         $numbers = count($array);
         if ($numbers == 1 && !$bigMenu) {
             return '';
@@ -104,12 +97,12 @@ class AdminMenuModel extends Model
         $data = $this->adminMenu($myId);
         $Level++;
         if (count($data) > 0) {
-            $ret = NULL;
+            $ret = null;
             foreach ($data as $a) {
-                $id         = $a['id'];
-                $app        = $a['app'];
+                $id = $a['id'];
+                $app = $a['app'];
                 $controller = ucwords($a['controller']);
-                $action     = $a['action'];
+                $action = $a['action'];
                 //附带参数
                 $params = "";
                 if ($a['param']) {
@@ -118,7 +111,7 @@ class AdminMenuModel extends Model
 
                 if (strpos($app, 'plugin/') === 0) {
                     $pluginName = str_replace('plugin/', '', $app);
-                    $url        = cmf_plugin_url($pluginName . "://{$controller}/{$action}{$params}");
+                    $url = cmf_plugin_url($pluginName . "://{$controller}/{$action}{$params}");
                 } else {
                     $url = url("{$app}/{$controller}/{$action}{$params}");
                 }
@@ -126,17 +119,16 @@ class AdminMenuModel extends Model
                 $app = str_replace('/', '_', $app);
 
                 $array = [
-                    "icon"   => $a['icon'],
-                    "id"     => $id . $app,
-                    "name"   => $a['name'],
+                    "icon" => $a['icon'],
+                    "id" => $id . $app,
+                    "name" => $a['name'],
                     "parent" => $parent,
-                    "url"    => $url,
-                    'lang'   => strtoupper($app . '_' . $controller . '_' . $action)
+                    "url" => $url,
+                    'lang' => strtoupper($app . '_' . $controller . '_' . $action),
                 ];
 
-
                 $ret[$id . $app] = $array;
-                $child           = $this->getTree($a['id'], $id, $Level);
+                $child = $this->getTree($a['id'], $id, $Level);
                 //由于后台管理界面只支持三层，超出的不层级的不显示
                 if ($child && $Level <= 3) {
                     $ret[$id . $app]['items'] = $child;
@@ -168,11 +160,11 @@ class AdminMenuModel extends Model
     public function menu($parentId, $with_self = false)
     {
         //父节点ID
-        $parentId = (int)$parentId;
-        $result   = $this->where(['parent_id' => $parentId])->select();
+        $parentId = (int) $parentId;
+        $result = $this->where(['parent_id' => $parentId])->select();
         if ($with_self) {
             $result2[] = $this->where(['id' => $parentId])->find();
-            $result    = array_merge($result2, $result);
+            $result = array_merge($result2, $result);
         }
         return $result;
     }

@@ -17,7 +17,7 @@ class UserValidate extends Validate
     protected $rule = [
         'user_login' => 'require|unique:user,user_login',
         'user_pass'  => 'require',
-        'user_email' => 'require|email|unique:user,user_email',
+        // 'user_email' => 'require|email|unique:user,user_email',
     ];
     protected $message = [
         'user_login.require' => '用户不能为空',
