@@ -10,10 +10,10 @@
 // +----------------------------------------------------------------------
 namespace app\admin\controller;
 
+use app\admin\model\AdminMenuModel;
 use cmf\controller\AdminBaseController;
 use think\Db;
 use tree\Tree;
-use app\admin\model\AdminMenuModel;
 
 class RbacController extends AdminBaseController
 {
@@ -214,7 +214,7 @@ class RbacController extends AdminBaseController
         $result = $adminMenuModel->menuCache();
 
         $newMenus      = [];
-        $privilegeData = $AuthAccess->where(["role_id" => $roleId])->column("rule_name");//获取权限表数据
+        $privilegeData = $AuthAccess->where(["role_id" => $roleId])->column("rule_name"); //获取权限表数据
 
         foreach ($result as $m) {
             $newMenus[$m['id']] = $m;
@@ -229,7 +229,7 @@ class RbacController extends AdminBaseController
 
         $str = "<tr id='node-\$id'\$parentIdNode  style='\$style'>
                    <td style='padding-left:30px;'>\$spacer<input type='checkbox' name='menuId[]' value='\$id' level='\$level' \$checked onclick='javascript:checknode(this);'> \$name</td>
-    			</tr>";
+                </tr>";
         $tree->init($result);
 
         $category = $tree->getTree(0, $str);
@@ -273,7 +273,7 @@ class RbacController extends AdminBaseController
                     }
                 }
 
-                cache(null, 'admin_menus');// 删除后台菜单缓存
+                cache(null, 'admin_menus'); // 删除后台菜单缓存
 
                 $this->success("授权成功！");
             } else {
@@ -333,4 +333,3 @@ class RbacController extends AdminBaseController
     }
 
 }
-
