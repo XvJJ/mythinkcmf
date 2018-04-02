@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:1:{s:9:"162domain";a:7:{s:4:"icon";s:11:"paper-plane";s:2:"id";s:9:"162domain";s:4:"name";s:12:"域名管理";s:6:"parent";s:0:"";s:3:"url";s:32:"/domain/admin_index/default.html";s:4:"lang";s:25:"DOMAIN_ADMININDEX_DEFAULT";s:5:"items";a:2:{s:9:"163domain";a:6:{s:4:"icon";s:14:"location-arrow";s:2:"id";s:9:"163domain";s:4:"name";s:8:"IP管理";s:6:"parent";i:162;s:3:"url";s:27:"/domain/admin_ip/index.html";s:4:"lang";s:20:"DOMAIN_ADMINIP_INDEX";}s:9:"164domain";a:6:{s:4:"icon";s:11:"search-plus";s:2:"id";s:9:"164domain";s:4:"name";s:12:"域名列表";s:6:"parent";i:162;s:3:"url";s:31:"/domain/admin_domain/index.html";s:4:"lang";s:24:"DOMAIN_ADMINDOMAIN_INDEX";}}}}

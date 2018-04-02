@@ -1,0 +1,375 @@
+---------------------------------------------------------------
+[ 2018-04-02T15:24:56+08:00 ] 127.0.0.1 GET /
+[ info ] mythinkcmf.com/ [运行时间：3.056175s][吞吐率：0.33req/s] [内存消耗：3,820.76kb] [文件加载：63]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.301017s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=xujunjie',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.274016s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.009001s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\portal\controller\IndexController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:24:58+08:00 ] 127.0.0.1 GET /admin.html
+[ info ] mythinkcmf.com/admin.html [运行时间：1.124065s][吞吐率：0.89req/s] [内存消耗：3,901.98kb] [文件加载：64]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=xujunjie',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.247015s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:24:59+08:00 ] 127.0.0.1 GET /admin/public/login.html
+[ info ] mythinkcmf.com/admin/public/login.html [运行时间：0.822047s][吞吐率：1.22req/s] [内存消耗：4,344.79kb] [文件加载：67]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=xujunjie; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ RUN ] app\admin\controller\PublicController->login[ D:\wamp64\www\mythinkcmf\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:25:00+08:00 ] 127.0.0.1 GET /captcha/new.html?height=32&width=150&font_size=18
+[ info ] mythinkcmf.com/captcha/new.html?height=32&width=150&font_size=18 [运行时间：0.982056s][吞吐率：1.02req/s] [内存消耗：3,267.75kb] [文件加载：51]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\cmf\\controller\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=xujunjie; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2',
+)
+[ info ] [ PARAM ] array (
+  'height' => '32',
+  'width' => '150',
+  'font_size' => '18',
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003001s ]
+[ info ] [ RUN ] cmf\controller\CaptchaController->index[ D:\wamp64\www\mythinkcmf\simplewind\cmf\controller\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:25:11+08:00 ] 127.0.0.1 POST /admin/public/dologin.html
+[ info ] mythinkcmf.com/admin/public/dologin.html [运行时间：1.102063s][吞吐率：0.91req/s] [内存消耗：5,451.84kb] [文件加载：70]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'public',
+    2 => 'dologin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'content-length' => '65',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mythinkcmf.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mythinkcmf.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; admin_username=xujunjie; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin',
+  'captcha' => 'qh6c',
+  '_captcha_id' => '',
+  'redirect' => '',
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ RUN ] app\admin\controller\PublicController->doLogin[ D:\wamp64\www\mythinkcmf\app\admin\controller\PublicController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.056003s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `user_login` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `b` ON `a`.`role_id`=`b`.`id` WHERE  `user_id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.086005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `user_id` = 1  AND `device_type` = 'web' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_type`=1,`sex`=0,`birthday`=0,`last_login_time`=1522653911,`score`=0,`coin`=0,`balance`=0,`create_time`=1521537117,`user_status`=1,`user_login`='admin',`user_pass`='###879c20136c037d32edba42a6c58a8a14',`user_nickname`='admin',`user_email`='xujunjie_1020@sina.com',`user_url`='',`avatar`='',`signature`='',`last_login_ip`='127.0.0.1',`user_activation_key`='',`mobile`='',`more`=NULL  WHERE  `id` = 1 [ RunTime:0.189011s ]
+---------------------------------------------------------------
+[ 2018-04-02T15:25:14+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] mythinkcmf.com/admin/index/index.html [运行时间：0.537031s][吞吐率：1.86req/s] [内存消耗：6,415.73kb] [文件加载：79]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/public/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-02T15:25:15+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] mythinkcmf.com/admin/main/index.html [运行时间：0.705041s][吞吐率：1.42req/s] [内存消耗：5,733.46kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.167009s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-02T15:25:21+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] mythinkcmf.com/favicon.ico [运行时间：0.515030s][吞吐率：1.94req/s] [内存消耗：3,261.15kb] [文件加载：54]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=nn8vta7sh7gtpts4u77agd33l2; admin_username=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LOG ] INIT File

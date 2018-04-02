@@ -1,0 +1,996 @@
+---------------------------------------------------------------
+[ 2018-03-30T14:59:03+08:00 ] 127.0.0.1 GET /admin/setting/clearcache.html
+[ info ] mythinkcmf.com/admin/setting/clearcache.html [运行时间：0.398023s][吞吐率：2.51req/s] [内存消耗：5,885.96kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'clearcache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mythinkcmf.com/admin/index/index.html',
+  'cookie' => 'admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.006000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->clearCache[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\clearcache.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T14:59:08+08:00 ] 127.0.0.1 GET /admin/setting/default.html
+[ info ] mythinkcmf.com/admin/setting/default.html [运行时间：0.581033s][吞吐率：1.72req/s] [内存消耗：5,384.79kb] [文件加载：76]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.050003s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'default',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/default' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T14:59:11+08:00 ] 127.0.0.1 GET /admin.html
+[ info ] mythinkcmf.com/admin.html [运行时间：0.436025s][吞吐率：2.29req/s] [内存消耗：6,669.34kb] [文件加载：81]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/index') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'user/adminindex/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('user/adminindex/default') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'domain/adminindex/default' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('domain/adminindex/default') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 162  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'domain/adminip/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('domain/adminip/index') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'domain/admindomain/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('domain/admindomain/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 163  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 164  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/site' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/site') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/user/userinfo' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/user/userinfo') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'portal/admincategory/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('portal/admincategory/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'portal/adminarticle/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('portal/adminarticle/index') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'user/adminasset/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('user/adminasset/index') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/clearcache' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/clearcache') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/recyclebin/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/recyclebin/index') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-30T14:59:12+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] mythinkcmf.com/admin/main/index.html [运行时间：0.353020s][吞吐率：2.83req/s] [内存消耗：5,733.51kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.005000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T14:59:23+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] mythinkcmf.com/admin/index/index.html [运行时间：0.251015s][吞吐率：3.98req/s] [内存消耗：6,466.64kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mythinkcmf.com/admin/public/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 0  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 6  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 71  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 15  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 95  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 29  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 78  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 7  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 61  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 75  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 93  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 158  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 109  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 49  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 50  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 110  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 152  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 153  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 156  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 162  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 163  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` WHERE  `parent_id` = 164  AND `status` = 1 ORDER BY `list_order`  ASC [ RunTime:0.005001s ]
+---------------------------------------------------------------
+[ 2018-03-30T14:59:23+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] mythinkcmf.com/admin/main/index.html [运行时间：0.140008s][吞吐率：7.14req/s] [内存消耗：5,733.68kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mythinkcmf.com/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:03:50+08:00 ] 127.0.0.1 GET /admin/setting/password.html
+[ info ] mythinkcmf.com/admin/setting/password.html [运行时间：0.330019s][吞吐率：3.03req/s] [内存消耗：5,785.20kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'password',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->password[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\password.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:03:53+08:00 ] 127.0.0.1 GET /admin/user/userinfo.html
+[ info ] mythinkcmf.com/admin/user/userinfo.html [运行时间：0.348020s][吞吐率：2.87req/s] [内存消耗：5,704.41kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/setting/password.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/user/userinfo' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/user/userinfo') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:03:57+08:00 ] 127.0.0.1 GET /admin/setting/password.html
+[ info ] mythinkcmf.com/admin/setting/password.html [运行时间：0.320019s][吞吐率：3.12req/s] [内存消耗：5,785.20kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'password',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->password[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\password.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:04:09+08:00 ] 127.0.0.1 POST /admin/setting/passwordpost.html
+[ info ] mythinkcmf.com/admin/setting/passwordpost.html [运行时间：0.307018s][吞吐率：3.26req/s] [内存消耗：5,340.88kb] [文件加载：74]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'passwordpost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'content-length' => '60',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mythinkcmf.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mythinkcmf.com/admin/setting/password.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'old_password' => 'xujunjie',
+  'password' => 'xujunjie',
+  're_password' => 'xujunjie',
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->passwordPost[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/passwordpost' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/passwordpost') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:04:20+08:00 ] 127.0.0.1 POST /admin/setting/passwordpost.html
+[ info ] mythinkcmf.com/admin/setting/passwordpost.html [运行时间：0.352020s][吞吐率：2.84req/s] [内存消耗：5,332.10kb] [文件加载：74]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'passwordpost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'content-length' => '56',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mythinkcmf.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mythinkcmf.com/admin/setting/password.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+  'old_password' => 'xujunjie',
+  'password' => '112358',
+  're_password' => '112358',
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->passwordPost[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/passwordpost' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/passwordpost') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `cmf_user`  SET `user_pass`='###9f28ebbec12c0ff0151e809a1ed7e033'  WHERE  `id` = 3 [ RunTime:0.033002s ]
+---------------------------------------------------------------
+[ 2018-03-30T15:04:22+08:00 ] 127.0.0.1 GET /admin/setting/password.html
+[ info ] mythinkcmf.com/admin/setting/password.html [运行时间：0.323018s][吞吐率：3.10req/s] [内存消耗：5,785.45kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'password',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mythinkcmf.com/admin/setting/password.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; XDEBUG_SESSION=XDEBUG_ECLIPSE; PHPSESSID=3ndjek45oiclpej2vj2miompj2; admin_username=xujunjie; thinkphp_show_page_trace=0|0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->password[ D:\wamp64\www\mythinkcmf\app\admin\controller\SettingController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\setting\password.html [ array (
+  0 => 'admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_rule` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_auth_rule` WHERE  `name` = 'admin/setting/password' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `role_id` FROM `cmf_role_user` `a` INNER JOIN `cmf_role` `r` ON `a`.`role_id`=`r`.`id` WHERE  `a`.`user_id` = 3  AND `r`.`status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_auth_access` `a` INNER JOIN `cmf_auth_rule` `b` ON `a`.`rule_name`=`b`.`name` WHERE  `a`.`role_id` IN (2)  AND `b`.`name` IN ('admin/setting/password') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-30T17:22:10+08:00 ] 127.0.0.1 GET /admin/menu/index.html
+[ info ] mythinkcmf.com/admin/menu/index.html [运行时间：0.340020s][吞吐率：2.94req/s] [内存消耗：6,503.65kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menu',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mythinkcmf.com/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.004000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MenuController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\MenuController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\menu\index.html [ array (
+  0 => 'admin',
+  1 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_admin_menu` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_admin_menu` ORDER BY `list_order`  ASC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T17:25:42+08:00 ] 127.0.0.1 GET /
+[ info ] mythinkcmf.com/ [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：5,143.61kb] [文件加载：69]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.002000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\portal\controller\IndexController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'site_info' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-30T17:25:42+08:00 ] 127.0.0.1 GET /admin.html
+[ info ] mythinkcmf.com/admin.html [运行时间：0.113007s][吞吐率：8.85req/s] [内存消耗：6,414.85kb] [文件加载：79]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.005000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\index\index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-30T17:25:43+08:00 ] 127.0.0.1 GET /admin/main/index.html
+[ info ] mythinkcmf.com/admin/main/index.html [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：5,733.45kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007000s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mythinkcmf.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mythinkcmf.com/admin.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; admin_username=admin; PHPSESSID=i6ig7hgmt0j5as39gfhruske20',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/admin\lang\zh-cn\admin.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../app/user\lang\zh-cn\admin_menu.php
+[ info ] [ LANG ] D:\wamp64\www\mythinkcmf\public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.007000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ D:\wamp64\www\mythinkcmf\app\admin\controller\MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin\main\index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=thinkcmf5;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_option` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cmf_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.001000s ]
